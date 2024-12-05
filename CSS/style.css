@@ -4,6 +4,37 @@
     box-sizing: border-box;
 }
 
+/* Versao 2.0: responsividade/@mediaQuery */
+@media (max-width: 768px) {
+    header {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .RedeSocial a img {
+        height: 40px; /* Ajuste menor para telas pequenas */
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .AreaDestaque img {
+        width: 100%;
+    }
+
+    .formulario input, .formulario select, .formulario button {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .faq ol li {
+        font-size: 0.9em;
+    }
+}
+
+
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -19,7 +50,7 @@ header {
 }
 
 .logo {
-    font-size: 150pxem;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -90,9 +121,86 @@ nav a {
     padding: 10px;    
 }
 
-footer {
-    text-align: center;
+/* Versao 2.0: FAQ, que alterei no HTML */
+.faq {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
     padding: 20px;
-    background-color: #007ACC;
+    background-color: #e8f5e9; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    color: #00796b; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.faq ol {
+    list-style: none;
+    padding: 0;
+}
+
+.faq ol li {
+    margin-top: 3vw;
+}
+
+// 
+.faq ol li details {
+    background-color: #ffffff; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c8e6c9; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq ol li details summary {
+    font-size: 18px;
+    font-weight: bold;
+    color: #004d40; 
+}
+
+.faq ol li details[open] summary {
+    color: #1b5e20; 
+}
+
+.faq ol li details p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #2e7d32; 
+    line-height: 1.6;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 20px;
+    background-color: #007ACC; /* Cor do fundo */
     color: white;
+}
+
+.RedeSocial {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+    
+}
+
+.RedeSocial a img {
+    width: auto;
+    height: 50px; /* Ajusta a altura dos ícones */
+    max-height: 10vh; /* Garante que o ícone nunca ultrapasse 10% da altura da visualização */
+    transition: transform 0.3s ease; /* Adiciona uma animação suave ao passar o mouse */
+}
+
+.RedeSocial a img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    filter: brightness(1.2); /* Realça o brilho ao interagir */
 }
