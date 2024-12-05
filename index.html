@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!--Versao 2.0: SEO e metaTag -->
+    <meta name="description" content="Plataforma que conecta idosos e tutores aos melhores prestadores de serviços nas áreas de saúde e manutenção residencial.">
+    <meta name="keywords" content="Serviços para idosos, assistência domiciliar, saúde, manutenção predial, profissionais qualificados">
+    <meta name="author" content="Senior Service">
+    <meta property="og:title" content="Senior Service - Cuidados e Conforto">
+    <meta property="og:description" content="Conectamos idosos e seus tutores a profissionais de confiança nas áreas de saúde e manutenção.">
+    <meta property="og:image" content="assets/CasalSenhoresNetospexels-pixabay.jpg">
+    <meta property="og:url" content="http://seniorservice.com">
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços para Idosos</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -21,7 +31,7 @@
     <section class="AreaDestaque">
         <h1>Cuidando de quem você ama, sempre perto de você</h1>
         <p>Conectamos você aos melhores profissionais de Saúde e de Manutenção Predial para idosos</p>
-        <img src="assets/CasalSenhoresNetospexels-pixabay.jpg" width="100%" alt="Idosos Felizes">
+        <img src="assets/CasalSenhoresNetospexels-pixabay.jpg" width="80%" alt="Idosos Felizes">
     </section>
 
     <section class="descricao">
@@ -56,26 +66,51 @@
                 <option value="outro">Outro</option>
             </select>
             <input type="date" id="DataNascimento" name="DataNascimento" required>
-            <button type="button">Enviar</button>
+            <button type="button" onclick="validacaoteFormulario()">Enviar</button>
         </form>
     </section>
 
+    <!--Versao 2.0: Lista Suspensa Melhorada -->
     <section class="faq">
         <h2>Perguntas Frequentes</h2>
         <ol>
-            <li>Como faço para contratar um serviço?</li>
-            <li>Como funciona a avaliação dos prestadores?</li>
-            <li>Quais são as áreas de cobertura do serviço?</li>
+            <li>
+                <details>
+                    <summary>Quais são os serviços oferecidos?</summary>
+                    <p>Nossos serviços incluem assistência médica domiciliar e manutenção residencial.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Como funciona a avaliação dos prestadores de serviços?</summary>
+                    <p>Os prestadores são avaliados por clientes anteriores com base na qualidade e profissionalismo.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Como faço para contratar um serviço?</summary>
+                    <p>Você pode acessar nossa plataforma, buscar o profissional e realizar a contratação diretamente.</p>
+                </details>
+            </li>
         </ol>
     </section>
-
+    
+    
     <footer>
         <p>Links úteis: 
             <a href="#">Termos de Uso</a> | 
             <a href="#">Política de Privacidade</a> | 
             <a href="#">Termo LGPD</a>
         </p>
+        
         <p>Contato: seniorservice@servico.com | (99) 9999-9999</p>
+
+        <!--Versao 2.0: SEO Redes Sociais. -->
+        <div class="RedeSocial">
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="assets/redesSociais/facebook_icon.png" alt="Facebook"></a>
+            <a href="https://x.com/" target="_blank"><img src="assets/redesSociais/twitter_icon.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/redesSociais/instagram_icon.png" alt="Instagram"></a>
+        </div>
     </footer>
 
     <script src="JAVASCRIPT/script.js"></script>
