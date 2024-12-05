@@ -1,0 +1,1 @@
+//alert("Cookies: roubarei seus dados !!!");

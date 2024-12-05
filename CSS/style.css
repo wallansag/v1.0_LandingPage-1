@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007ACC;
+    color: white;
+}
+
+.logo {
+    font-size: 150pxem;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.AreaDestaque {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f3f3f3;
+}
+
+.AreaDestaque h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.AreaDestaque p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    padding: 20px;
+}
+
+.descricao h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.descricao ul {
+    list-style: none;
+}
+
+.descricao li {
+    background: url('#') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.depoimentos {
+    padding: 20px;
+    background-color: #e8f4f8;
+    text-align: center;
+}
+
+.depoimentos {
+    margin-bottom: 10px;
+}
+
+.estrelas {
+    color: gold;
+}
+
+.formulario {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.formulario input, .formulario select, .formulario button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007ACC;
+    color: white;
+}
